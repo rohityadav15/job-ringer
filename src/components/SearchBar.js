@@ -19,7 +19,7 @@ const SearchBar = () => {
           fontWeight: "bold",
           color: "white",
           fontSize: "20px",
-          marginRight: "20px",
+          marginRight: "1px",
         }}
       >
         Search Job
@@ -32,7 +32,7 @@ const SearchBar = () => {
         sx={{
           backgroundColor: "white",
           borderRadius: "5px",
-          minWidth: "200px",
+          minWidth: "400px",
         }}
       />
 
@@ -41,7 +41,8 @@ const SearchBar = () => {
           minWidth: "150px",
           backgroundColor: "white",
           borderRadius: "5px",
-          marginLeft: "10px",
+          marginLeft: "5px",
+          width:"20%"
         }}
       >
         <InputLabel>Select Location</InputLabel>
@@ -58,10 +59,11 @@ const SearchBar = () => {
           backgroundColor: "white",
           borderRadius: "5px",
           marginLeft: "10px",
+           width:"10%"
         }}
       >
         <InputLabel>Select Experience</InputLabel>
-        <Select size="small">
+        <Select size="small" width={"10%"}>
           <MenuItem value={1}>Fresher</MenuItem>
           <MenuItem value={2}>1-2 Years</MenuItem>
           <MenuItem value={3}>3+ Years</MenuItem>

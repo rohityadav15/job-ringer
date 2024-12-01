@@ -28,7 +28,7 @@ const JobDetails = () => {
       }}
     >
       {/* Job Header Section */}
-      <Box width={"75%"}>
+      <Box width={"70%"}>
         <Card sx={{ padding: 2, marginBottom: 2, borderRadius: "8px" }}>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={2}>
@@ -91,79 +91,65 @@ const JobDetails = () => {
         </Card>
 
         {/* Tab Section */}
-        <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-          <Tabs value={tabValue} onChange={handleTabChange}>
-            <Tab label="Overview" />
-            <Tab label="Job Description" />
-            <Tab label="Candidate Profile" />
-            <Tab label="About Employer" />
-          </Tabs>
-        </Box>
-        <Box sx={{ padding: 2 }}>
-          {tabValue === 0 && (
-            <>
-              <Typography variant="h6" fontWeight="bold">
-                Overview
-              </Typography>
-              <Divider sx={{ marginY: 1 }} />
-              <Typography>
-                Industry - IT Consulting Services / Advisory Services
-              </Typography>
-              <Typography>
-                Functional Area - IT Web Designing / Mobile App / Graphics
-              </Typography>
-              <Typography>Job Role - Application Designer</Typography>
-            </>
-          )}
-          {tabValue === 1 && (
-            <>
-              <Typography variant="h6" fontWeight="bold">
-                Job Description | Role and Responsibilities
-              </Typography>
-              <Divider sx={{ marginY: 1 }} />
-              <Typography>
-                - Collaborate with the team to ensure consistency of designs
-                across media outlets.
-              </Typography>
-              <Typography>
-                - Create compelling logos, print, and digital media designs.
-              </Typography>
-              <Typography>
-                - Maintain awareness of current industry standards, social
-                media, and competitive landscape trends.
-              </Typography>
-            </>
-          )}
-          {/* Add more content for other tabs */}
+        <Box sx={{ border: "1px solid black" }}>
+          <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+            <Tabs value={tabValue} onChange={handleTabChange}>
+              <Tab label="Overview" />
+              <Tab label="Job Description" />
+              <Tab label="Candidate Profile" />
+              <Tab label="About Employer" />
+            </Tabs>
+          </Box>
+          <Box sx={{ padding: 2 }}>
+            {tabValue === 0 && (
+              <>
+                <Typography
+                  variant="h6"
+                  fontWeight="bold"
+                  backgroundColor={"#1976d2"}
+                >
+                  Overview
+                </Typography>
+                <Divider sx={{ marginY: 1 }} />
+                <Typography>
+                  Industry - IT Consulting Services / Advisory Services
+                </Typography>
+                <Typography>
+                  Functional Area - IT Web Designing / Mobile App / Graphics
+                </Typography>
+                <Typography>Job Role - Application Designer</Typography>
+              </>
+            )}
+            {tabValue === 1 && (
+              <>
+                <Typography
+                  variant="h6"
+                  fontWeight="bold"
+                  backgroundColor={"#1976d2"}
+                >
+                  Job Description | Role and Responsibilities
+                </Typography>
+                <Divider sx={{ marginY: 1 }} />
+                <Typography>
+                  - Collaborate with the team to ensure consistency of designs
+                  across media outlets.
+                </Typography>
+                <Typography>
+                  - Create compelling logos, print, and digital media designs.
+                </Typography>
+                <Typography>
+                  - Maintain awareness of current industry standards, social
+                  media, and competitive landscape trends.
+                </Typography>
+              </>
+            )}
+            {/* Add more content for other tabs */}
+          </Box>
         </Box>
       </Box>
       {/* Similar Jobs Section */}
-      {/* <Box sx={{ marginTop: 2 }}>
-        <Typography variant="h6" fontWeight="bold">
-          Similar Jobs
-        </Typography>
-        <Divider sx={{ marginY: 1 }} />
-        <Card sx={{ padding: 2, marginBottom: 1 }}>
-          <Typography fontWeight="bold">AI GRAPHIC DESIGNER</Typography>
-          <Typography color="text.secondary">
-            Probus Insurance Broker Pvt. Ltd.
-          </Typography>
-          <Typography>
-            1 - 4 years | Not Disclosed | Mumbai (All Areas)
-          </Typography>
-        </Card>
-        <Card sx={{ padding: 2 }}>
-          <Typography fontWeight="bold">
-            GRAPHIC DESIGNER AND VIDEO EDITOR
-          </Typography>
-          <Typography color="text.secondary">
-            Virtual Real Design Pvt. Ltd.
-          </Typography>
-          <Typography>0 - 4 years | Not Disclosed | Dehradun</Typography>
-        </Card>
-      </Box> */}
 
-      <Box sx={{ padding: 2,  width:"23%" }}>
+      <Box sx={{ padding: 2, width: "20%", marginLeft: 5 }}>
         {/* Mobile App Promotion Section */}
         <Card
           sx={{
@@ -173,7 +159,6 @@ const JobDetails = () => {
             backgroundColor: "#f9f9f9",
             boxShadow: 1,
             borderRadius: 2,
-           
           }}
         >
           <Typography fontWeight="bold" variant="subtitle1" marginBottom={1}>

@@ -1,13 +1,13 @@
 import React from "react";
-import Banner from "../components/Banner";
-import Search from "../components/Banner"
+import SearchBar from "../components/SearchBar";
+import Search from "../components/SearchBar"
 import QuickLinks from "../components/QuickLinks";
 import FeaturedJob from "../components/FeaturedJob";
 
 const Home = () => {
   return (
     <>
-      <Banner />
+      <SearchBarBar />
       <Search />
       <QuickLinks />
       <FeaturedJob />
