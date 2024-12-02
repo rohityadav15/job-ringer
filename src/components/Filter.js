@@ -3,13 +3,18 @@ import {
   Box,
   Button,
   Card,
-  CardContent,
   Grid,
   Typography,
   Tab,
   Tabs,
   Divider,
+  TextField,
+  Paper,
+  FormGroup,
+  FormControlLabel,
+  Checkbox,
 } from "@mui/material";
+import QuickLinks from "./QuickJobs";
 
 const JobDetails = () => {
   const [tabValue, setTabValue] = React.useState(0);
@@ -25,73 +30,76 @@ const JobDetails = () => {
         backgroundColor: "#f9f9f9",
         display: "flex",
         flexDirection: "row",
+        overflow:"scroll"
       }}
     >
-      {/* Job Header Section */}
-      <Box width={"70%"}>
-        <Card sx={{ padding: 2, marginBottom: 2, borderRadius: "8px" }}>
-          <Grid container spacing={2}>
-            <Grid item xs={12} sm={2}>
-              <Box
-                sx={{
-                  backgroundColor: "#003366",
-                  width: "100px",
-                  height: "100px",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  borderRadius: "8px",
-                  marginBottom: 1,
-                }}
-              >
-                <Typography color="white" fontWeight="bold">
-                  DVIO
-                </Typography>
-              </Box>
-            </Grid>
-            <Grid item xs={12} sm={7}>
-              <Typography variant="h5" fontWeight="bold" color="blue">
-                GRAPHIC DESIGNER
-              </Typography>
-              <Typography variant="subtitle1" color="text.secondary">
-                DVIO Digital
-              </Typography>
-              <Box
-                sx={{
-                  display: "flex",
-                  flexWrap: "wrap",
-                  gap: 1,
-                  marginTop: 1,
-                  color: "gray",
-                }}
-              >
-                <Typography>2 - 4 Years</Typography>
-                <Typography>|</Typography>
-                <Typography>Not Disclosed</Typography>
-                <Typography>|</Typography>
-                <Typography>Full Time - Permanent</Typography>
-                <Typography>|</Typography>
-                <Typography>Pune</Typography>
-              </Box>
-            </Grid>
-            <Grid item xs={12} sm={3} textAlign="right">
-              <Button variant="contained" sx={{ background: "#007FFF" }}>
-                APPLY
-              </Button>
-              <Typography
-                variant="caption"
-                color="text.secondary"
-                display="block"
-                marginTop={1}
-              >
-                Posted on 17 Nov, 2024
-              </Typography>
-            </Grid>
-          </Grid>
-        </Card>
-
-        {/* Tab Section */}
-        <Box sx={{ border: "1px solid black" }}>
+      <Box
+        sx={{
+          marginRight: "20px",
+          width: "30%",
+        }}
+      >
+        <Paper elevation={3} sx={{ padding: 3, borderRadius: 2 }}>
+          <Typography variant="h6" gutterBottom>
+            Filters
+          </Typography>
+          <Box sx={{ marginBottom: 2 }}>
+            <Typography variant="subtitle1">Keywords</Typography>
+            <TextField
+              fullWidth
+              size="small"
+              variant="outlined"
+              placeholder="Type keyword and press enter"
+            />
+          </Box>
+          <Box sx={{ marginBottom: 2 }}>
+            <Typography variant="subtitle1">Experience</Typography>
+            <TextField
+              fullWidth
+              size="small"
+              variant="outlined"
+              placeholder="Enter years of experience"
+            />
+          </Box>
+          <Box sx={{ marginBottom: 2 }}>
+            <Typography variant="subtitle1">Work Mode</Typography>
+            <Divider sx={{ marginY: 1 }} />
+            <FormGroup>
+              <FormControlLabel control={<Checkbox />} label="In Office" />
+              <FormControlLabel
+                control={<Checkbox />}
+                label="Work From Home / WFH"
+              />
+              <FormControlLabel control={<Checkbox />} label="Hybrid" />
+              <FormControlLabel control={<Checkbox />} label="Remote" />
+              <FormControlLabel control={<Checkbox />} label="On Field" />
+            </FormGroup>
+          </Box>
+          <Box>
+            <Typography variant="subtitle1">Job Type</Typography>
+            <Divider sx={{ marginY: 1 }} />
+            <FormGroup>
+              <FormControlLabel control={<Checkbox />} label="All Jobs" />
+              <FormControlLabel control={<Checkbox />} label="Classic Jobs" />
+              <FormControlLabel control={<Checkbox />} label="Featured Jobs" />
+              <FormControlLabel control={<Checkbox />} label="Premium Jobs" />
+            </FormGroup>
+          </Box>
+        </Paper>
+      </Box>
+      <Box width={"45%"} >
+        <Box overflow={"scroll"}height={"500px"}>
+          <QuickLinks />
+        </Box>
+        <Box
+          mt={2}
+          sx={{
+            border: "1px solid black",
+            borderRadius: "10px",
+            width: "93%",
+            marginLeft: 3,
+          }}
+        >
           <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
             <Tabs value={tabValue} onChange={handleTabChange}>
               <Tab label="Overview" />
@@ -138,19 +146,15 @@ const JobDetails = () => {
                   - Create compelling logos, print, and digital media designs.
                 </Typography>
                 <Typography>
-                  - Maintain awareness of current industry standards, social
+                  - Maintain  awareness of current industry standards, social
                   media, and competitive landscape trends.
                 </Typography>
               </>
             )}
-            {/* Add more content for other tabs */}
           </Box>
         </Box>
       </Box>
-      {/* Similar Jobs Section */}
-
-      <Box sx={{ padding: 2, width: "20%", marginLeft: 5 }}>
-        {/* Mobile App Promotion Section */}
+      <Box sx={{ padding: 2, width: "20%", marginLeft: 2 }}>
         <Card
           sx={{
             padding: 2,
@@ -207,7 +211,6 @@ const JobDetails = () => {
               <strong>Key Skills:</strong> Graphic Designer / Developer
             </Typography>
           </Card>
-          {/* Job Card 2 */}
           <Card
             sx={{
               padding: 2,

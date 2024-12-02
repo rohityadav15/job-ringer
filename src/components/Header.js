@@ -2,6 +2,7 @@ import React from "react";
 import { AppBar, Box, Button, Toolbar, Typography } from "@mui/material";
 
 const Header = () => {
+
   return (
     <AppBar style={{ backgroundColor: "white" }}>
       <Toolbar sx={{ justifyContent: "space-between" }}>
@@ -40,7 +41,6 @@ const Header = () => {
               backgroundColor: "white",
               color: "#000",
               boxShadow: 0,
-              // border: "1px solid green",
               "&:hover": {
                 backgroundColor: "blue",
                 color: "#fff",
@@ -56,7 +56,6 @@ const Header = () => {
               backgroundColor: "white",
               color: "#000",
               boxShadow:0,
-              // border: "1px solid green",
               "&:hover": {
                 backgroundColor: "blue",
                 color: "#fff"
@@ -74,7 +73,7 @@ const Header = () => {
               boxShadow:0,
               border: "1px solid green",
               "&:hover": {
-                backgroundColor: "blue",
+                backgroundColor: "#e0a800",
                 color: "#fff"
               },
               margin: "0 5px",
@@ -85,11 +84,11 @@ const Header = () => {
           <Button
             variant="contained"
             sx={{
-              backgroundColor: "white",
-              color: "green",
+              backgroundColor: "#e0a800",
+              color: "black",
               border: "1px solid green",
               "&:hover": {
-                backgroundColor: "#1e7e34",
+                backgroundColor: "blue",
                 color: "#fff",
               },
               margin: "0 5px",
@@ -102,5 +101,4 @@ const Header = () => {
     </AppBar>
   );
 };
-
 export default Header;

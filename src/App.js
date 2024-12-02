@@ -1,17 +1,15 @@
 import Header from "./components/Header";
 import SearchBar from "./components/SearchBar";
-import Search from "./components/Search";
-import QuickLinks from "./components/QuickLinks";
-import FeaturedJob from "./components/FeaturedJob";
+import Filter from "./components/Filter";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
     <>
       <Header />
       <SearchBar />
-      <Search />
-      <QuickLinks />
-      <FeaturedJob />
+      <Filter />
+      <Footer />
     </>
   );
 };
