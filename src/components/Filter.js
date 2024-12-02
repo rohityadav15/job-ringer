@@ -3,7 +3,7 @@ import {
   Box,
   Button,
   Card,
-  Grid,
+  Grid2,
   Typography,
   Tab,
   Tabs,

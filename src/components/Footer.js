@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, Grid, Link, IconButton } from "@mui/material";
+import { Box, Typography, Grid2, Link, IconButton } from "@mui/material";
 import { Facebook, Twitter, Instagram, LinkedIn, Telegram } from "@mui/icons-material";
 
 const Footer = () => {
@@ -12,8 +12,8 @@ const Footer = () => {
         fontFamily: "'Roboto', sans-serif",
       }}
     >
-      <Grid container spacing={2} justifyContent="space-around">
-        <Grid item xs={12} md={6}>
+      <Grid2 container spacing={2} justifyContent="space-around">
+        <Grid2 item xs={12} md={6}>
           <Typography variant="h6" sx={{ fontWeight: "bold" }}>
             JOBS IN INDIA
           </Typography>
@@ -21,8 +21,8 @@ const Footer = () => {
             #Mumbai #Delhi #Ajmer #Pune #Hyderabad #Agra #Chennai #Kolkata
             #Indore #Gurugram #Jaipur #Ahmedabad
           </Typography>
-        </Grid>
-        <Grid item xs={12} md={6}>
+        </Grid2>
+        <Grid2 item xs={12} md={6}>
           <Typography variant="h6" sx={{ fontWeight: "bold" }}>
             INTERNATIONAL JOBS
           </Typography>
@@ -30,8 +30,8 @@ const Footer = () => {
             #Africa #USA #UK #Australia #Canada #Singapore #Dubai #Saudi Arabia
             #New Zealand
           </Typography>
-        </Grid>
-      </Grid>
+        </Grid2>
+      </Grid2>
 
       <Box sx={{ my: 3 }}>
         <Typography variant="h4" sx={{ fontWeight: "bold" }}>

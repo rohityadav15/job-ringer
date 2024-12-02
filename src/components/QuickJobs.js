@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import {
   Container,
   Box,
-  Grid,
+  Grid2,
   Typography,
   Card,
   CardContent,
@@ -122,9 +122,9 @@ const QuickJobs = () => {
         </Typography>
       </Box>
 
-      <Grid container spacing={2}>
+      <Grid2 container spacing={2}>
         {jobs.map((job) => (
-          <Grid item xs={12} key={job.id}>
+          <Grid2 item xs={12} key={job.id}>
             <Card elevation={5} sx={{ borderRadius: 2 }}>
               <CardContent>
                 <Box
@@ -158,35 +158,35 @@ const QuickJobs = () => {
                   </Typography>
                 </Box>
                 <Divider sx={{ my: 2 }} />
-                <Grid container spacing={1}>
-                  <Grid item xs={12} md={6}>
+                <Grid2 container spacing={1}>
+                  <Grid2 item xs={12} md={6}>
                     <Typography variant="body2">
                       <Work sx={{ fontSize: 16, verticalAlign: "middle" }} />{" "}
                       {job.experience}
                     </Typography>
-                  </Grid>
-                  <Grid item xs={12} md={6}>
+                  </Grid2>
+                  <Grid2 item xs={12} md={6}>
                     <Typography variant="body2">
                       <AttachMoney
                         sx={{ fontSize: 16, verticalAlign: "middle" }}
                       />{" "}
                       {job.salary}
                     </Typography>
-                  </Grid>
-                  <Grid item xs={12} md={6}>
+                  </Grid2>
+                  <Grid2 item xs={12} md={6}>
                     <Typography variant="body2">
                       <LocationOn
                         sx={{ fontSize: 16, verticalAlign: "middle" }}
                       />{" "}
                       {job.location}
                     </Typography>
-                  </Grid>
-                  <Grid item xs={12} md={6}>
+                  </Grid2>
+                  <Grid2 item xs={12} md={6}>
                     <Typography variant="body2">
                       <strong>Key Skills:</strong> {job.skills}
                     </Typography>
-                  </Grid>
-                </Grid>
+                  </Grid2>
+                </Grid2>
                 <Box
                   mt={2}
                   display="flex"
@@ -204,9 +204,9 @@ const QuickJobs = () => {
                 </Box>
               </CardContent>
             </Card>
-          </Grid>
+          </Grid2>
         ))}
-      </Grid>
+      </Grid2>
     </Container>
   );
 };
