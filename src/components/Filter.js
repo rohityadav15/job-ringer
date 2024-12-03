@@ -15,7 +15,7 @@ import {
 } from "@mui/material";
 import QuickJobs from "./QuickJobs";
 
-const JobDetails = () => {
+const Filter = () => {
   const [tabValue, setTabValue] = React.useState(0);
 
   const handleTabChange = (event, newValue) => {
@@ -241,4 +241,5 @@ const JobDetails = () => {
   );
 };
 
-export default JobDetails;
+export default Filter
+;
