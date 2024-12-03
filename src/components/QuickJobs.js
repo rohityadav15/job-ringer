@@ -86,7 +86,7 @@ const QuickJobs = () => {
       experience: "1 - 5 Years",
       salary: "Not Disclosed",
       type: "Full Time",
-      location: "Durgapur",
+      location: "Durgapur,Nagpur",
       skills: "WordPress Developer",
       posted: "5 hours ago",
       mode: "In Office",
@@ -122,7 +122,7 @@ const QuickJobs = () => {
         </Typography>
       </Box>
 
-      <Grid2 container spacing={2}>
+      <Grid2 container spacing={2} width={"530px"}>
         {jobs.map((job) => (
           <Grid2 item xs={12} key={job.id}>
             <Card elevation={5} sx={{ borderRadius: 2 }}>

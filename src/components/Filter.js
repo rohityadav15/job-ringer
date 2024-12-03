@@ -13,7 +13,7 @@ import {
   FormControlLabel,
   Checkbox,
 } from "@mui/material";
-import QuickLinks from "./QuickJobs";
+import QuickJobs from "./QuickJobs";
 
 const JobDetails = () => {
   const [tabValue, setTabValue] = React.useState(0);
@@ -29,7 +29,7 @@ const JobDetails = () => {
         backgroundColor: "#f9f9f9",
         display: "flex",
         flexDirection: "row",
-        overflow:"scroll"
+        overflow: "scroll",
       }}
     >
       <Box
@@ -86,17 +86,19 @@ const JobDetails = () => {
           </Box>
         </Paper>
       </Box>
-      <Box width={"45%"} >
-        <Box overflow={"scroll"}height={"500px"}>
-          <QuickLinks />
+      <Box width={"45%"}>
+        <Box overflow={"auto"} height={"500px"} pb={5}>
+          <QuickJobs />
         </Box>
         <Box
+          overflow={"auto"}
           mt={2}
           sx={{
             border: "1px solid black",
             borderRadius: "10px",
-            width: "93%",
+            width: "80%",
             marginLeft: 3,
+            height:"200px"
           }}
         >
           <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
@@ -145,7 +147,7 @@ const JobDetails = () => {
                   - Create compelling logos, print, and digital media designs.
                 </Typography>
                 <Typography>
-                  - Maintain  awareness of current industry standards, social
+                  - Maintain awareness of current industry standards, social
                   media, and competitive landscape trends.
                 </Typography>
               </>
