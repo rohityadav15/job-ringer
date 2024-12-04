@@ -75,7 +75,7 @@ const QuickJobs = () => {
       salary: "₹1 Lac - 2.5 Lac P.A",
       type: "Full Time",
       location: "Salem, USA",
-      skills: "Nurse / Nurses",
+      skills: "Nurse ",
       posted: "5 hours ago",
       mode: "In Office",
     },
