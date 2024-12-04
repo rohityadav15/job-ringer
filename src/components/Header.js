@@ -2,13 +2,14 @@ import React from "react";
 import { AppBar, Box, Button, Toolbar, Typography } from "@mui/material";
 
 const Header = () => {
-
   return (
     <AppBar style={{ backgroundColor: "white" }}>
       <Toolbar sx={{ justifyContent: "space-between" }}>
-        <Typography variant="h6" color="blue">
+        <Typography variant="h6" color="blue" p={0} m={0}>
           JobRinger
-          <Typography color="black">India job portal</Typography>
+          <Typography color="black" p={0} m={0}>
+            India job portal
+          </Typography>
         </Typography>
         <Box style={{ display: "flex", flexDirection: "row" }}>
           <Typography color="black" style={{ marginRight: 3 }}>
@@ -55,10 +56,10 @@ const Header = () => {
             sx={{
               backgroundColor: "white",
               color: "#000",
-              boxShadow:0,
+              boxShadow: 0,
               "&:hover": {
                 backgroundColor: "blue",
-                color: "#fff"
+                color: "#fff",
               },
               margin: "0 5px",
             }}
@@ -70,11 +71,11 @@ const Header = () => {
             sx={{
               backgroundColor: "white",
               color: "#000",
-              boxShadow:0,
+              boxShadow: 0,
               border: "1px solid green",
               "&:hover": {
                 backgroundColor: "#e0a800",
-                color: "#fff"
+                color: "#fff",
               },
               margin: "0 5px",
             }}
