@@ -22,7 +22,7 @@ const QuickJobs = () => {
     {
       id: 1,
       title: "NURSE FRESHER - THENI",
-      company: "HCL Management Services",
+      company: "HCL Management",
       experience: "0 - 3 Years",
       salary: "₹1 Lac - 2.5 Lac P.A",
       type: "Full Time",
