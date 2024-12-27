@@ -32,7 +32,7 @@ const QuickJobs = () => {
       mode: "In Office",
     },
     {
-      id: 3,
+      id: 2,
       title: "WORDPRESS DEVELOPER",
       company: "Wipro Pvt. Ltd.",
       experience: "1 - 5 Years",
@@ -44,7 +44,7 @@ const QuickJobs = () => {
       mode: "In Office",
     },
     {
-      id: 4,
+      id: 3,
       title: "NURSE FRESHER - THENI",
       company: "HIND Management Services",
       experience: "0 - 3 Years",
@@ -56,7 +56,7 @@ const QuickJobs = () => {
       mode: "In Office",
     },
     {
-      id: 5,
+      id: 4,
       title: "FRONT-END DEVELOPER",
       company: "Techpile Technologies Pvt. Ltd.",
       experience: "1 - 5 Years",
@@ -68,7 +68,7 @@ const QuickJobs = () => {
       mode: "In Office",
     },
     {
-      id: 6,
+      id: 5,
       title: "NURSE FRESHER - THENI",
       company: "Devki Management Services",
       experience: "0 - 3 Years",
@@ -80,7 +80,7 @@ const QuickJobs = () => {
       mode: "In Office",
     },
     {
-      id: 7,
+      id: 6,
       title: "BACKEND DEVELOPER",
       company: "HINDCO Technologies Pvt. Ltd.",
       experience: "1 - 5 Years",
