@@ -34,7 +34,7 @@ const QuickJobs = () => {
     {
       id: 3,
       title: "WORDPRESS DEVELOPER",
-      company: "Wipro Technologies Pvt. Ltd.",
+      company: "Wipro Pvt. Ltd.",
       experience: "1 - 5 Years",
       salary: "Not Disclosed",
       type: "Full Time",
